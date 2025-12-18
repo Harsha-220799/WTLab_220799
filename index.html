@@ -13,7 +13,7 @@
     <h1>Online Examination System</h1>
     <p>Smart • Secure • Simple</p>
 </header>
-
+ 
 <nav class="navbar">
     <a href="#home">Home</a>
     <a href="#about">About</a>
@@ -24,15 +24,43 @@
 
 <section id="home" class="main">
     <h2>Welcome to Online Exams</h2>
-    <p>Attend exams anytime, anywhere with complete security.</p>
+    <p>Attend exams anytime, anywhere with complete security.</p><br>
     <button class="btn">Start Examination</button>
 </section>
+
+<!--<video class="video" width="400" controls autoplay muted loop>
+    <source src="onlineexamvideo.mp4" type="video/mp4">
+</video>-->
+<div class="video-login-container">
+
+   
+    <video class="video" autoplay muted loop id="examVideo">
+        <source src="onlineexamvideo.mp4" type="video/mp4">
+    </video>
+
+    
+    <section id="login" class="section login-side">
+        <h2>Student Login</h2>
+        <label>If not registered? <a href="signup.html">sign up</a></label><br><br>
+
+        <form class="login-form">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button class="btn">Login</button>
+        </form>
+    </section>
+
+</div>
+
 
 <section id="about" class="section">
     <h2>About System</h2>
     <p>
-        The Online Examination System is a web-based platform that allows students
+         The Online Examination System is a web-based platform that allows students
         to take exams digitally, reducing paperwork and increasing efficiency.
+    </p><br> 
+    <p>
+        Here u can write a simple exams on subjects(like html,python,c etc..) and evaluate ur performance instantly.
     </p>
 </section>
 
@@ -45,7 +73,7 @@
         <div class="card">Instant Results</div>
     </div>
 </section>
-
+<!--
 <section id="login" class="section">
     <h2>Student Login</h2>
     	<label>If not registered? <a href="signup.html">sign up</a></label><br><br>
@@ -55,17 +83,36 @@
         <input type="password" placeholder="Password" required>
         <button class="btn">Login</button>
     </form>
-</section>
+</section> -->
 
-<video class="video" width="400" controls autoplay muted loop>
-    <source src="onlineexamvideo.mp4" type="video/mp4">
-</video>
 
+<!--
 <audio class="audio" controls autoplay  muted loop>
     <source src="onlineexamaudio.mp3" type="audio/mp3">
 
+</audio>-->
+
+<audio class="audio" id="bgAudio">
+    <source src="onlineexamaudio.mp3" type="audio/mp3">
 </audio>
 
+
+<script>
+    const audio = document.getElementById("bgAudio");
+    
+    document.addEventListener("click", function playAudioOnce() {
+        audio.play();
+        document.removeEventListener("click", playAudioOnce);
+    });
+    </script>
+    
+<section class="section" style="text-align: center;">
+    <h2>Learning Resources</h2>
+    <a href="learning.html" class="btn">Go to Learning Page</a>
+</section>
+
+    
+        
 
 </body>
 </html>

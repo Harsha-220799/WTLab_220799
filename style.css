@@ -108,14 +108,106 @@ body {
 }
 .video {
     display: block;
-    margin: 30px auto;
+    /*margin: 30px auto;
     max-width: 90%;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+    width: 600px;
+    height: 500px;
+    video-fit: cover;
+    
+    object-fit: cover;
+
 }
 .audio {
     display: block;
     margin: 20px auto;
 }
+
+.video-login-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    width: 90%;
+}
+
+.login-side {
+    width: 40%;
+}
+
+.video {
+    width: 60%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+
+
+
+.learning-container {
+    background: white;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+
+.learning-section h2 {
+    color: #2c3e50;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+.learning-section h3 {
+    margin-bottom: 10px;
+}
+
+.learning-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.learning-section li {
+    margin: 8px 0;
+}
+
+.learning-section a {
+    text-decoration: none;
+    color: #5832c0;
+    font-weight: bold;
+}
+
+.learning-section a:hover {
+    text-decoration: underline;
+}
+
+.tutorial-row {
+    display: flex;
+    gap: 40px;
+    justify-content:center;
+}
+
+
+.tutorial-box {
+     flex: 1;
+    max-width: 420px;
+}
+
+
+.documentation {
+    text-align: center;
+    margin-top: 40px;
+}
+.learning-frame {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
 
 
